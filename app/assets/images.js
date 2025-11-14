@@ -1,4 +1,4 @@
-import logo from "./images/logo/adventure-wedding-logo.svg.svg";
+import logo from "./images/logo/adventure-wedding-logo.svg";
 
 export const images = {
   logo,
