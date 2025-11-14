@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { CartProvider } from "./context/CartContext";
 
 // Inter font will be loaded via CSS from CDN or system fonts
 // The CSS variable is defined in globals.css
@@ -49,10 +50,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${clashDisplay.variable} antialiased`}
-      >
-        {children}
+      <body className={`${clashDisplay.variable} antialiased`}>
+        <CartProvider>{children}</CartProvider>
       </body>
     </html>
   );
