@@ -18,8 +18,8 @@ export default function Header() {
 
   return (
     <header
-      className={` h-24 w-full transition-all duration-200 bg-black z-50 ${
-        scroll ? " backdrop-blur-lg top-0 sticky" : ""
+      className={` h-24 w-full transition-all duration-200 z-50  ${
+        scroll ? " backdrop-blur-lg top-0 sticky" : " fixed top-0 left-0"
       }`}
     >
       <Container className={"h-full"}>
