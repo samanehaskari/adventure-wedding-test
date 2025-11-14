@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import React from "react";
-import Typography from "../global/typography";
+import Typography from "./typography";
 
 export default function AnimatedText({ text }) {
   const ref = React.useRef(null);

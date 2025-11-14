@@ -6,7 +6,7 @@ import Container from "../global/container";
 import { images } from "../../assets/images";
 import { headerLinks } from "../../libs/header-data";
 import Button from "../global/button";
-import IconButton from "../global/icon-button";
+import ShoppingCart from "./shopping-cart";
 
 export default function Header() {
   const [scroll, setScroll] = useState(false);
@@ -18,15 +18,15 @@ export default function Header() {
 
   return (
     <header
-      className={` h-24 w-full transition-all duration-200 z-50  ${
-        scroll ? " backdrop-blur-lg top-0 sticky" : " fixed top-0 left-0"
+      className={` h-24 w-full transition-all duration-200 z-50 fixed top-0 left-0  ${
+        scroll ? " backdrop-blur-lg " : ""
       }`}
     >
-      <Container className={"h-full"}>
+      <Container className="h-full">
         <div className=" flex items-center h-full justify-between w-full ">
           <div className=" flex items-center gap-6">
             <div>
-              <Image alt="samaneh Askari logo" src={images.logo} />
+              <Image alt="adventure wedding logo" src={images.logo} />
             </div>
             <div className=" flex items-center gap-5">
               <ul className=" flex gap-[30px] text-base text-white">
@@ -42,7 +42,7 @@ export default function Header() {
             <Button size="md" color="white" variant="outlined" rounded="full">
               LOGIN / REGISTER
             </Button>
-            <IconButton icon="solar:cart-large-minimalistic-bold" />
+            <ShoppingCart />
           </div>
         </div>
       </Container>

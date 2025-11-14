@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Header from "./components/header/header";
-import HeroSection from "./components/hero-section/hero-section";
+import HeroSectionView from "./sections/hero-section/hero-section-view";
+import PackagesListView from "./sections/packages/packages-list-view";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <HeroSection />
+      <HeroSectionView />
+      <PackagesListView />
     </>
   );
 }
